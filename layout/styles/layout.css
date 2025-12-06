@@ -1,0 +1,464 @@
+@charset "utf-8";
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+
+
+#header #logo{margin:22px 0 0 0;}
+
+#header #logo h1{margin:0; padding:0; font-size:2.2rem;}
+
+/* Particular styles of index.html
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:200px 0 400px;}
+/* 400px => 200px for #introblocks negative margin */
+#pageintro h2 {
+	font-size: 2rem;
+	margin-top: 6rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+figure img {
+	border-radius: 12px;
+}
+
+figcaption {
+	border-radius: 0 0 12px 12px;
+}
+
+#introblocks h3 {
+	color: #aaa;
+}
+
+.blocks li h4 {
+	text-align: center;
+	display: block;
+}
+
+.blocks figcaption {
+	margin-top: 1em;
+}
+
+.team figure {
+	border-radius: 9px;
+	margin: auto;
+	min-height: 280px;
+}
+
+#introblocks h3.contrast {
+	color: black;
+}
+
+ul {
+	padding-inline-start: 10px;
+}
+
+li {
+	text-align: left;
+}
+
+.iconlinks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.iconlinks figure {
+	padding: 1rem;
+	min-height: 80px;
+	min-width: 100px;
+}
+
+.iconlinks a img {
+	width: 36px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	cursor: pointer;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+
+/* End migrated styles */
+
+
+
+#pageintro article, #pageintro article p{display:block; max-width:75%; margin:0 auto; text-align:center;}
+
+#pageintro article p{max-width:65%; line-height:2rem;}
+
+#pageintro .heading{margin-bottom:20px; font-size:4rem;}
+
+#pageintro footer{margin-top:50px;}
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+
+.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+
+#introblocks.introblocks{display:block; position:relative; margin:-280px 0 0 0; z-index:1; text-align:center;}/* 280px => 200px + container padding */
+.introblocks figure{display:block; position:relative; max-width:348px; text-align:center;}
+
+.introblocks figure figcaption{display:block; position:absolute; bottom:0; width:100%; padding:0 20px;}
+
+.introblocks figure figcaption *{margin:0; padding:0;}
+
+.introblocks figure figcaption div{max-height:0; overflow:hidden; transition:max-height .6s cubic-bezier(0, 1, 0, 1) -.1s;}
+
+.introblocks figure:hover figcaption div{max-height:1200px; transition-timing-function:cubic-bezier(0.5, 0, 1, 0); transition-delay:0s;}
+
+.introblocks figure figcaption .heading{padding:20px 0; font-size:1.2rem; font-weight:700; line-height:1;}
+
+.introblocks figure figcaption div p{padding:0 0 20px 0;}
+
+.imgroup li{margin-bottom:50px;}
+
+.imgroup li:nth-last-child(-n+3){margin-bottom:0;}
+
+/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
+.imgroup li:nth-child(3n+1){margin-left:0; clear:left;}
+
+.team li:last-child{margin-bottom:0;}
+
+/* Used when elements stack in small viewports */
+.team figure{display:block; text-align:center;}
+
+.team figure *{margin:0; padding:0;}
+
+.team figure figcaption{padding:20px 10px; line-height:1;}
+
+.team figure strong{display:block; margin-bottom:8px; font-size:1.4rem; font-weight:400;}
+
+.team figure em{display:block; font-style:normal; font-size:.8rem;}
+
+/* Client Logos */
+.clients{text-align:center;}
+
+.clients li{margin-bottom:20px;}
+
+.clients li:nth-last-child(-n+2){margin-bottom:0;}
+
+/* Removes bottom margin from the last four items - margin is restored in the media queries when items stack */
+.clients li:nth-child(2n+1){margin-left:0; clear:left;}
+
+/* Contact Details
+--------------------------------------------------------------------------------------------------------------- */
+#ctdetails{padding:50px 0;}
+
+#links{padding:20px 0;}
+
+#ctdetails ul li div{position:relative; min-height:45px; padding:0 0 0 60px; line-height:1;}
+
+#links ul li div{min-height:45px;line-height:1;}
+
+#ctdetails ul li div i{position:absolute; top:0; left:0; width:45px; height:45px; line-height:43px; font-size:16px; text-align:center; border:1px solid; border-radius:50%;}
+
+#links ul li div i{width:45px; height:45px; line-height:43px; font-size:16px; text-align:center;}
+
+#links ul{
+	width: 100%;	
+}
+#links li{	
+  border:1px solid #B946AD;
+  transition: .3s ease;
+}
+
+#links li .block{
+ 	display: flex;
+	justify-content: center;
+}
+#links ul li div span{ height:45px; line-height:43px; font-size:16px; text-align:center; }
+
+#ctdetails ul li div span {display:block; padding:4px 0 0 0;}
+
+#links ul li div span{display:block; color: #fff;}
+#links ul li div:hover{
+  box-shadow:0 2px 6px rgba(185, 70, 173, 45%), 0 8px 24px rgba(185, 70, 173, 50%), 0 16px 32px rgba(185, 70, 173, 50%);
+}
+#links ul li div:hover i{
+  color: #fff;
+}
+
+#ctdetails ul li div strong{display:block; margin:0 0 8px 0; text-transform:capitalize;}
+
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+#footer .latestimg > li{display:inline-block; float:left; width:30%; margin:0 0 5% 5%;}
+
+#footer .latestimg > li:nth-last-child(-n+3){margin-bottom:0;}
+
+/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
+#footer .latestimg > li:nth-child(3n+1){margin-left:0; clear:left;}
+
+/* Removes the need to add class="first" */
+#footer .latestimg > li img{width:100%;}
+
+/* Force the image to resize to take the full space - may have to be changed for tablets, depends on personal preference */
+#footer .latestimg > li a.imgover{display:block;}
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+
+#copyright *{margin:0; padding:0;}
+
+/* Transition Fade
+This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
+If you don't want it to fade all elements, you have to list the ones you want to be faded individually
+Delete it completely to stop fading
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+
+#mainav form *{transition:none !important;}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"Font Awesome\ 5 Free"; font-weight:900; font-size:10px; line-height:10px;}
+
+#mainav ul{text-transform:uppercase;}
+
+#mainav ul ul{position:absolute; width:180px; text-transform:none; z-index:9999;}
+
+#mainav ul ul ul{left:180px; top:0;}
+
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+
+#mainav li:last-child{margin-right:0;}
+
+#mainav li li{width:100%; margin:0;}
+
+#mainav li a{display:block; padding:30px 0;}
+
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+
+#mainav .drop{padding-left:15px;}
+
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+
+#mainav .drop::after{top:35px; left:5px;}
+
+#mainav li li .drop::after{top:15px; left:5px;}
+
+#mainav ul ul{visibility:hidden; opacity:0;}
+
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; width:100%; margin:0; padding:0;}
+
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+
+#mainav form select{width:100%; padding:5px; border:none;}
+
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+
+#backtotop:hover{opacity:1;}
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#A5A6AA; background-color:#161C21;}
+
+a{color:#B946AD;}
+
+a:active, a:focus{background:transparent !important;}
+
+/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+
+label span{color:#FF0000; background-color:inherit;}
+
+input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
+
+.overlay{color:#FFFFFF; background-color:inherit;}
+
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+
+.coloured{color:#FFFFFF; background-color:#A032AB;}
+
+.coloured .btn, .coloured .btn.inverse:hover{color:#FFFFFF; background-color:#161C21; border-color:#161C21;}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#B946AD; border-color:#B946AD;}
+
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+.imgover:hover::before{background-color:rgba(185,70,173,.5);/* #B946AD */}
+
+.imgover, .imgover:hover::after{color:#FFFFFF;}
+.heading.underline::after{background-color:#A032AB;}
+.row1{color:#FFFFFF; background-color:rgba(0,0,0,.75);}
+
+.row2{color:#474747; background-color:#F4F4F4;}
+
+.row3{color:#474747; background-color:#FFFFFF;}
+
+.row4{color:#A5A6AA; background-color:#000000;}
+
+.row5, .row5 a{color:#A5A6AA; background-color:#161C21;}
+
+/* Header */
+#header #logo h1 a{color:inherit;}
+
+/* Page Intro */
+#pageintro{color:#FFFFFF;}
+
+/* Content Area */
+.introblocks figure figcaption{color:#FFFFFF; background-color:rgba(0,0,0,.55);}
+
+.imgroup article a{color:inherit;}
+
+.imgroup article:hover a{color:#B946AD;}
+
+.team figure{box-shadow:0px 0px 15px rgba(0,0,0,.1);}
+
+.team figure:hover{color:#FFFFFF; background-color:#B946AD;}
+
+/* Contact Details */
+#ctdetails ul li div a{color:#FFFFFF;}
+
+#ctdetails ul li div a i{color:rgba(255,255,255,.5); border-color:rgba(255,255,255,.5);}
+
+#ctdetails ul li div:hover a i{color:inherit; border-color:rgba(255,255,255,1);}
+
+#ctdetails ul li div strong{color:#FFFFFF;}
+
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+
+#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
+
+#mainav li a{color:inherit;}
+
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#B946AD; background-color:inherit;}
+
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(185,70,173,.5);/* #B946AD */ border-color:rgba(185,70,173,.5);}
+
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#B946AD;}
+
+#mainav form select{color:#FFFFFF; background-color:#474747; border-radius: 5px;}
+
+#backtotop{color:#FFFFFF; background-color:#B946AD;}
+
+@media screen and (min-width:1140px){
+.hoc{max-width:1140px;}
+}
+
+@media screen and (min-width:978px) and (max-width:1140px){
+.hoc{max-width:95%;}
+}
+
+@media screen and (max-width:978px){
+.hoc{max-width:90%;}
+
+#header{padding:30px 0;}
+
+#header #logo{margin-top:0;}
+
+#mainav ul{display:none;}
+
+#mainav form{display:block; margin-top:2px;}
+
+#copyright p:first-of-type{margin-bottom:10px;}
+.row3 { background-color: #aaa; }
+.separator { display: none; }
+#pageintro article.title{ display: none; }
+.row2 .group .clear h4{ text-align: center; margin-bottom: 1rem; }
+}
+
+@media screen and (max-width:750px){
+	.fl_left, .fl_right{display:block; float:none;}
+
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}
+
+	/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+		.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0;}
+		#links .one_third{margin-bottom:10px;}
+
+	/* This is personal preference - remove if not required */
+
+		#header{text-align:center;}
+
+	#header #logo{margin:0 0 15px 0;}
+
+	#pageintro article, #pageintro article p{max-width:none;}
+
+	#pageintro .heading{font-size:2rem;}
+
+	.sectiontitle{max-width:none;}
+
+	.introblocks > ul{margin:0 auto 80px;}
+
+	.introblocks > ul, #latest article{max-width:100%;}
+
+	/* Restrict the width to the one_third grid element */
+		.team figure{max-width:300px;}
+
+	/* Restrict the width to the image width */
+		.introblocks > ul > li, .imgroup li:nth-last-child(-n+3){margin-bottom:20px;}
+
+	.clients li:nth-last-child(-n+2){margin-bottom:20px;}
+
+	.introblocks > ul > li:last-child, .imgroup li:last-child, .clients li:last-child{margin-bottom:0;}
+}
+
+
+@media screen and (max-width:650px){
+.inline li{display:block; margin-bottom:10px;}
+
+.pushright li{margin-right:0;}
+
+.font-x2{font-size:1.6rem;}
+}
+

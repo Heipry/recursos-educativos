@@ -14,15 +14,42 @@ Portfolio web personal que recopila recursos educativos, proyectos finalizados y
 - **Tests y Autoevaluaciones**: Ejercicios interactivos de CSS, JavaScript y Linux
 - **Material multimedia**: Videos de formación y streaming
 
-## 🚀 Tecnologías utilizadas
+## 🚀 Tecnologías mostradas
 
 - HTML5
 - CSS3 (con efectos avanzados y animaciones)
 - JavaScript (VanillaJS y jQuery)
-- Bootstrap 3
+- Bootstrap
 - Font Awesome
 - Responsive Design
 - Git & GitHub
+
+## 🛠️ Instalación y uso
+
+### Visualizar localmente
+
+Simplemente abre index.html en tu navegador:
+
+```bash
+# En Windows PowerShell
+start ./index.html
+
+# O usa un servidor local (recomendado)
+# Con Python 3
+python -m http.server 8000
+
+# Con Node.js (live-server)
+npx live-server
+```
+
+Luego navega a `http://localhost:8000`
+### Acceder en GitHub Pages
+El proyecto está alojado en GitHub Pages y puede ser accedido en:
+```
+ https://heipry.github.io/recursos-educativos/
+
+```         
+[Ir a recursos-educativos](https://heipry.github.io/recursos-educativos/)
 
 
 ## 📚 Recursos incluidos
